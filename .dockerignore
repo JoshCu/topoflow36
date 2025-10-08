@@ -10,6 +10,7 @@ notebooks/*
 __pycache__/
 *.py[cod]
 *$py.class
+.git/*
 
 # C extensions
 *.so
