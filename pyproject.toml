@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topoflow"
+version = "3.6"
+description = "d8-based, spatial hydrologic model"
+authors = [
+    {name = "Scott D. Peckham", email = "Scott.Peckham@colorado.edu"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1,<2",
+    "wheel",
+    "setuptools>=67",
+    "scipy==1.13.*",
+    "netCDF4==1.6.*",
+    "cfunits==3.3.*",
+    "GDAL==3.4.3",
+    "imageio==2.37.*",
+    "imageio-ffmpeg==0.6.*",
+    "matplotlib==3.9.*",
+    "suds",
+]
+
+[project.urls]
+Homepage = "https://github.com/peckhams/topoflow36"
+Repository = "https://github.com/peckhams/topoflow36"
+
+[tool.setuptools]
+packages = {find = {}}
+include-package-data = true
